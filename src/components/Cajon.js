@@ -56,6 +56,7 @@ const Cajon = (props) => {
 
           <Divider />
           <Button href='/grid' style={{ backgroundColor: '#cfe8fc'}}>grid</Button>
+          <Button href='/box' style={{ backgroundColor: '#cfe8fc'}}>box</Button>
         
         </Drawer>
       </Hidden>

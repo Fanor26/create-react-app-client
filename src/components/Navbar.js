@@ -44,7 +44,7 @@ const Navbar = (props) => {
                             <MenuIcon/>
                         </IconButton>
                     <Typography variant="h6" className={classes.title}>
-                      Drawer Material-Ui
+                      Material-Ui
                     </Typography>
                    
                     <Hidden only={["md", "lg"]}>
