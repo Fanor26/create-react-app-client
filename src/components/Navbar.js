@@ -33,7 +33,16 @@ const Navbar = (props) => {
     return (
         <>
             <AppBar elevation={20} color="contained">
+                
                 <Toolbar>
+                <IconButton
+                
+                            variant="contained"
+                            aria-label="menu"
+                            onClick={() => props.accionAbrir()}
+                        >
+                            <MenuIcon/>
+                        </IconButton>
                     <Typography variant="h6" className={classes.title}>
                       Drawer Material-Ui
                     </Typography>
