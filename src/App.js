@@ -1,12 +1,12 @@
 import React from 'react'
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
-import Navbar from './components/Navbar'
+import Contenedor from './components/Contenedor'
 
 function App() {
   return (
     <Router>
-         <Route path="/" exact component={Navbar}/>
+         <Route path="/" exact component={Contenedor}/>
       </Router>
   );
 }

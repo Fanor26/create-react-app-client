@@ -5,7 +5,6 @@ import {
     IconButton,
     Typography,
     Hidden
-
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import {makeStyles} from "@material-ui/core/styles";
@@ -29,18 +28,22 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const Navbar = () => {
+const Navbar = (props) => {
     const classes = useStyles();
     return (
         <>
             <AppBar elevation={20} color="contained">
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
-                        MATERIAL-UI NAVBAR
+                      Drawer Material-Ui
                     </Typography>
                    
                     <Hidden only={["md", "lg"]}>
-                        <IconButton>
+                        <IconButton
+                            variant="contained"
+                            aria-label="menu"
+                            onClick={() => props.accionAbrir()}
+                        >
                             <MenuIcon/>
                         </IconButton>
                     </Hidden>
