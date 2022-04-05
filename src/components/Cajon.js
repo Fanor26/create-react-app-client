@@ -55,7 +55,7 @@ const Cajon = (props) => {
           </Toolbar>
 
           <Divider />
-          <Button>fanor</Button>
+          <Button href='/'>fanor</Button>
         
         </Drawer>
       </Hidden>
